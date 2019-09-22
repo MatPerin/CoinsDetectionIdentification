@@ -1,13 +1,12 @@
-# CoinsDetectionIdentification
+# Coins Detection and Identification
 Final Project for the CV course: Identify and detect euro coins in a scene
 
-# Coins Detection and Identification
-Objective of the program
+# Objective of the program
 
 The program should be able to detect the euro coins in a scene and recognize their face value.
 The program should deal, therefore, with the problem of detection and, after that, identification.
 
-Step 1: Coins Detection
+# Step 1: Coins Detection
 
 The first step of dealing with the problem is the detection of coins in the scene. In this step the
 value of the coin is not important, we are only interest in identifying what is very likely to be a
@@ -51,7 +50,7 @@ method: Detect() that takes in input the original image and gives in output the 
 (vector of triples containing center coordinates and circle radius) and the rescaled image
 used for detection.
 
-Step 2: Coins Identification
+# Step 2: Coins Identification
 
 The identification of coins has been tackled with machine learning.
 
@@ -100,6 +99,8 @@ given threshold before rejecting the prediction. The method gives back a vector 
 the predictions (in string form) and another one containing the coins evaluated (coins near
 the edge of the image are not evaluated since they give unsure results). Both vectors are in
 the same order in which the circles are considered.
+
+# Usage of the program
 
 A test program has been implemented. It simply asks for the input image path. Then,
 the coins are detected using the implemented class, and the resulting circles are drawn on
